@@ -44,55 +44,6 @@ This repository contains the source code for an automated pipeline used to extra
 
 ---
 
-## Project Structure
-
-```
-logs-monitoring-pipeline/
-│
-├── dags/                          # Airflow DAGs
-│   ├── log_processing_dag.py      # Main DAG
-│   └── maintenance_dag.py         # Maintenance DAG
-│
-├── src/                           # Source code
-│   ├── extractors/                # Extraction modules
-│   │   ├── __init__.py
-│   │   └── log_extractor.py
-│   ├── parsers/                   # Log parsers
-│   │   ├── __init__.py
-│   │   └── log_parser.py
-│   ├── transformers/              # Data transformations
-│   │   ├── __init__.py
-│   │   └── data_transformer.py
-│   └── loaders/                   # Data loading
-│       ├── __init__.py
-│       └── db_loader.py
-│
-├── sql/                           # SQL scripts
-│   ├── create_tables.sql
-│   └── indexes.sql
-│
-├── config/                        # Configuration files
-│   ├── airflow.cfg
-│   ├── database.yaml
-│   └── logging.conf
-│
-├── tests/                         # Automated tests
-│   ├── test_extractors.py
-│   ├── test_parsers.py
-│   └── test_transformers.py
-│
-├── docs/                          # Documentation
-│   ├── architecture.md
-│   └── data_dictionary.md
-│
-├── requirements.txt               # Python dependencies
-├── docker-compose.yml             # Docker configuration
-├── Dockerfile                     # Docker image
-└── README.md                      # This file
-```
-
----
-
 ## Setup & Installation
 
 ### 1. Clone the repository
