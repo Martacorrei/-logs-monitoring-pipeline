@@ -11,16 +11,16 @@ This repository contains the source code for the automated pipeline used to extr
 
 
 ## System Architecture
-┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
-│   Log Sources   │───▶│  Apache Airflow  │───▶│   PostgreSQL    │
-│  (Backend Apps) │    │   ETL Pipeline   │    │    Database     │
-└─────────────────┘    └──────────────────┘    └─────────────────┘
-                              │
-                              ▼
-                       ┌──────────────────┐
-                       │   Dashboards     │
-                       │   & Analytics    │
-                       └──────────────────┘
+┌─────────────────┐ ┌──────────────────┐ ┌─────────────────┐
+│ Log Sources │───▶│ Apache Airflow │───▶│ PostgreSQL │
+│ (Backend Apps) │ │ ETL Pipeline │ │ Database │
+└─────────────────┘ └──────────────────┘ └─────────────────┘
+│
+▼
+┌──────────────────┐
+│ Dashboards │
+│ & Analytics │
+└──────────────────┘
 
 
 
